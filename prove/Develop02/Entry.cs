@@ -1,19 +1,15 @@
 public class Entry
 {
-    /* 
-    This class deals with entries for the journal
-    Attributes:
-        _userEntry: stores the user's journal entry
-        _date: stores the date of the entry
-        _prompt: stores the prompt associated with the entry
-    Methods:
-        DisplayEntry(): prints the entry's date, prompt, and entry to the console
-    */
-
+    // Store the content of the user's entry.
     public string _userEntry;
+
+    // Store the date of the user's entry.
     public string _date;
+
+    // Store the prompt of the user's entry.
     public string _prompt;
 
+    // Write the entry's date, prompt, and content to the console.
     public void DisplayEntry()
     {
         Console.WriteLine($"Date: {_date} - Prompt: {_prompt}");

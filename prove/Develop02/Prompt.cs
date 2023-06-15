@@ -1,19 +1,14 @@
 public class Prompt
 {
-    /* 
-    This class deals with prompts for the journal
-    Attributes:
-        _promptsList: a list of strings that holds pre-determined prompts
-    Methods:
-        GetPrompt(): Retrieves a random prompt from the list of prompts
-    */
+    // Create a list of strings to hold pre-determined prompts.
+    public string[] _promptsList;
 
-    public List<String> _promptsList = new List<String>();
-
+    // Retrieve and return a random prompt from the list "_promptsList".
     public String GetPrompt()
     {
         var random = new Random();
-        int index = random.Next(_promptsList.Count);
+        int index = random.Next(_promptsList.Count());
+        Console.WriteLine(_promptsList[index]);
         return _promptsList[index];
     }
 }
