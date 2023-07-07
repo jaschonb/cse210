@@ -197,7 +197,7 @@ public class GoalManager
             int goalQuantity = int.Parse(Console.ReadLine());
 
             // Prompts the user for the number of bonus points
-            Console.WriteLine("What is the bonus for accomplishing it that many times? ");
+            Console.Write("What is the bonus for accomplishing it that many times? ");
             int goalBonus = int.Parse(Console.ReadLine());
 
             newGoal = new ChecklistGoal(goalName, goalDescription, goalPoints, goalQuantity, goalBonus);
